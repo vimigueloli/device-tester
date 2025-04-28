@@ -8,7 +8,7 @@ onmessage = async function (event){
             const output = await response.json();
             console.log(output.meals[0]);
             if (n > 1) {
-                await delay(1000);
+                await delay(5000);
                 return searchAgain(n - 1);
             }
             return output.meals[0].strMeal;
