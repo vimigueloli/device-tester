@@ -1,5 +1,4 @@
 onmessage = async function (event){
-    console.log('event ->')
     const delay = (ms: any) => new Promise((res) => setTimeout(res, ms));
     const searchAgain = async (n: number) => {
         try{
